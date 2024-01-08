@@ -6,6 +6,9 @@ export default defineConfig({
   description: "MSL-X Document,but uses Vitepress",
   lang: "zh-Hans",
   cleanUrls: true,
+  head: [
+    [ 'link', { rel: 'icon', href: 'favicon.ico' } ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -62,6 +65,6 @@ export default defineConfig({
 
     logo: '/logo.png',
 
-    editLink: {pattern: 'https://github.com/MSLXTeam/mslxteam.github.io'}
+    editLink: {pattern: 'https://github.com/MSLXTeam/mslxteam.github.io'},
   }
 })

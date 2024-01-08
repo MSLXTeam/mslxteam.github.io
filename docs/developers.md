@@ -13,7 +13,7 @@ const members = [
   {
     avatar: 'https://www.github.com/MemoryShadow.png',
     name: 'MemoryShadow',
-    title: '工具人',
+    title: '无敌压缩机',
     links: [
       { icon: 'github', link: 'https://github.com/MemoryShadow' },
     ]
