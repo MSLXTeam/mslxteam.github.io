@@ -7,7 +7,7 @@ export default defineConfig({
   lang: "zh-Hans",
   cleanUrls: true,
   head: [
-    [ 'link', { rel: 'icon', href: 'favicon.ico' } ],
+    [ 'link', { rel: 'icon', href: '/favicon.ico' } ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
