@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /start/before
+      link: /start/env
     - theme: alt
       text: 开发文档
       link: /develop/plugin

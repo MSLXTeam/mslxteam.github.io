@@ -9,6 +9,10 @@ export default defineConfig({
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
     ],
+    markdown:{
+        lineNumbers: true,
+    },
+
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -24,7 +28,8 @@ export default defineConfig({
                     text: '开始使用',
                     collapsed: false,
                     items: [
-                        {text: '开始使用', link: '/start/before'},
+                        {text: 'Q&A', link: '/start/qa'},
+                        {text: '环境配置', link: '/start/env'},
                         {text: '更多功能', link: '/start/adv'},
                         {text: 'nginx反代', link: '/start/nginx'},
                         {text: '关于', link: '/start/about'}
