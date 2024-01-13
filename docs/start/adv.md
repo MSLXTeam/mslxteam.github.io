@@ -64,12 +64,3 @@
 | `str`  | `motd`                              | 服务器信息展示 （MOTD）                                  |
 
 - 更多详见[Minecraft Wiki](https://minecraft.fandom.com/zh/wiki/Server.properties?variant=zh)
-
-<!--
-prev: 
-text: '准备工作'
-link: '/start/before'
-next:
-text: 'nginx反代'
-link: '/start/nginx'
--->

@@ -2,7 +2,7 @@
 
 [![Security Status](https://www.murphysec.com/platform3/v31/badge/1731219173459054592.svg)](https://www.murphysec.com/console/report/1731219173408722944/1731219173459054592)
 
-MSLX 0.1.1b
+MSL-X 0.1.1b
 
 Copyleft MojaveHao
 
@@ -18,7 +18,7 @@ GNU Affero General Public License v3([View at there](https://www.gnu.org/license
 
 **不鼓励且不支持所有商业用途**
 
-未经许可,**任何人**不得将本文开头关于MSLX名称由来介绍的图片、图标或原文用于商业目的或项目首页,或其他未经授权的行为.
+未经许可,**任何人**不得将本文开头关于MSL-X名称由来介绍的图片、图标或原文用于商业目的或项目首页,或其他未经授权的行为.
 
 衍生软件**需要**声明引用
 
@@ -27,10 +27,10 @@ GNU Affero General Public License v3([View at there](https://www.gnu.org/license
 
 **Discourages** and does **not support all commercial** use
 Without permission, **no one** may use images and icons, or the original text of the introduction about the origin of
-the name MSLX at the beginning of this article, for commercial purposes or on the homepage of the project, or other
+the name MSL-X at the beginning of this article, for commercial purposes or on the homepage of the project, or other
 unauthorized acts.
 
 Derivative software **needs** to declare reference
 If the MSL-X distribution package is referenced , the derived project should **mention the use
-of MSLX** anywhere in the description. The fact that
+of MSL-X** anywhere in the description. The fact that
 **it is free and open source must not be distorted or hidden**.
