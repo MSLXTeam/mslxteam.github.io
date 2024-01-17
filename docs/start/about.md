@@ -10,7 +10,7 @@ GNU Affero General Public License v3([View at there](https://www.gnu.org/license
 
 ## 特别感谢
 
-[MemoryShadow](https://github/com/MemoryShadow)
+[MemoryShadow](https://github.com/MemoryShadow)
 
 [裕依2439](https://github.com/yuyi2439)
 
