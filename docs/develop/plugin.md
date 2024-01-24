@@ -1,37 +1,48 @@
-## 插件部分
+# 插件部分
 
-### 配置用于插件信息的UniversalInfo
+## 配置PluginInfo对象
 
-#### 使用
+### 使用
 
 ```python
-from tools.InfoClasses import InfoTypes, UniversalInfo
-info = UniversalInfo(...) # 按照下文的参数说明填写
+from tools.InfoClasses import PluginInfo
+info = PluginInfo(...) # 按照下文的参数说明填写
 ```
 
-#### 参数说明
+### 参数说明
 
-- ```type_of_info```用于UniversalInfo的信息内容识别，在用于插件信息的情况下必须为```InfoClasses.InfoTypes.Plugin```
 - ```name ```是插件的名称
 - ```author ```是插件的作者
 - ```description``` 是插件的描述
 - ```version ```是插件的版本
 - ```on``` 表示插件加载的位置
-- ```args``` 表示插件需要在运行时获取的变量
-- ```multi_thread``` 如果程序需要经过threading的特殊处理可将此项设为True
-- ```thread_class``` 在指定上一个参数为True的情况下**必须**指定此项为继承了Thread类的子类的类名
+- ```args``` 表示插件需要在运行时获取的变量(暂时没有实现)
+- ```thread_class``` 如果程序需要经过threading的特殊处理可将此项设为继承了Thread类的子类的类名或对象
 - ```events``` 表示插件在发生指定事件时需要执行的特殊动作
-    - ```on_load``` 当插件被检测到的时候运行的函数名称，无论插件是否启用
-    - ```on_enable``` 当插件被启用时运行的函数名称，插件的初始化函数应该写在这里而不是on_load处
-    - ```on_disable``` 当插件被关闭时运行的函数名称，需要注意的是如果主程序启动时插件已经被禁用，则这里的函数不会被运行
+    - ```on_load``` 当插件被加载时运行的函数名称或对象
+    - ```on_unload``` 当插件被卸载时运行的函数名称或对象
+    - ```on_enable``` 当插件被启用时运行的函数名称或对象，插件的初始化函数应该写在这里而不是on_load处
+    - ```on_disable``` 当插件被禁闭时运行的函数名称或对象，如果主程序启动时插件已经被禁用，则这里的函数不会被运行
+- ```dependencies``` 是插件的依赖项,可以为一个字符串(当只有一个依赖时可用)
+  或一个内容形如```{"name": "xxx", "version": "xxx"}```的列表
 
-#### 后续操作
+::: details 字典中version项写法
 
-- 使用```@PluginTools.AddPluginInfo```来注册插件的入口点
+| 示例          |              释义              |
+|-------------|:----------------------------:|
+| *           |             不做要求             |
+| =1.0.0      |          必须为1.0.0版本          |
+| ^1.0.0      |         必须大于1.0.0版本          |
+| ^^1.0.0     |        必须大于等于1.0.0版本         |
+| ~1.0.0      |      主次版本号必须相同(例如1.0.1)      |
+| ^~1.0.0     | 主版本号相同,次版本号必须高于指定的值(例如1.1.0) |
+| 1.0.0-1.1.0 |    在此版本区间中任何一个值(例如1.0.9)     |
 
-### 注册插件的入口点
+:::
 
-#### 使用
+## 注册插件的入口点
+
+### 使用
 
 假设你有以下代码:
 
@@ -40,15 +51,6 @@ def fool():
     print("WTF is this")
 ```
 
-则首先按照上面的说明配置UniversalInfo，然后使用```@PluginTools.AddPluginInfo```来注册这个函数为插件的入口点:
-
-```python
-from tools.InfoClasses import InfoTypes, UniversalInfo
-from tools.PluginTools import AddPluginInfo
-info = UniversalInfo(type_of_info=InfoTypes.Plugin, name="WTFPlugin", author="You")
-@AddPluginInfo(info)
-def fool():
-    print("WTF is this")
-```
+则首先按照上面的说明配置UniversalInfo，然后使用```@PluginTools.AddPluginInfo```来注册这个函数为插件的入口点.
 
 就这样，你写出了你的第一个插件。

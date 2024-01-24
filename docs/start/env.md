@@ -1,14 +1,5 @@
 # 环境配置指南
 
-## 系统和工具约定
-
-- debian,apt
-- centos stream9/8,dnf
-- fedora,dnf
-- alpine,apk
-- archlinux,pacman
-- 拥有root权限的普通用户
-
 ## 前提要求
 
 - 理解每条命令的含义和后果

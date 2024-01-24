@@ -6,7 +6,7 @@ Nginx 是一个高性能的HTTP服务器和反向代理，也可用作IMAP/POP3�
 
 ## 安装Nginx
 
-### 使用包管理器
+### 使用包管理器 {#install_nginx_with_package_manager}
 
 ::: code-group
 
@@ -46,7 +46,7 @@ sudo rc-update add nginx default
 
 :::
 
-### 编译安装
+### 编译安装 {#install_nginx_manually}
 
 #### 安装编译依赖
 
