@@ -11,10 +11,10 @@ hero:
       link: https://msl.waheal.top/files/MSL.exe
     - theme: alt
       text: 使用文档
-      link: /msl/server
+      link: /msl/start
     - theme: alt
       text: Github
-      link: https://github.com/Waheal/Minecraft-Server-Launcher
+      link: https://github.com/MSLTeam/MSL
   image: 
       src: ../msl.ico
       
