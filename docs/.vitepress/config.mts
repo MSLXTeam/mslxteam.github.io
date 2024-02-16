@@ -43,6 +43,9 @@ export default defineConfig({
             {text: '使用文档', link: '/start/env'},
             {text: '开发文档', link: '/develop/plugin'},
             {text: '开发人员名单', link: '/developers'},
+            {text: '其他文档', items: [
+                    {text: "MSL", link:"/msl/index"}
+                ]}
         ],
 
         sidebar: {
@@ -73,6 +76,21 @@ export default defineConfig({
                         {text: '事件系统', link: '/develop/event'},
                         {text: '命令系统', link: '/develop/command'},
                         {text: '杂项', link: '/develop/other'},
+                    ]
+                }
+            ],
+            '/msl/': [
+                {
+                    text: 'MSL | 使用文档',
+                    collapsed: false,
+                    items: [
+                        {text: '使用协议', link: '/msl/eula'},
+                        {text: '使用MSL开服', link: '/msl/start'},
+                        {text: '进行服务器配置', link: '/msl/config'},
+                        {text: '内网穿透配置', link: '/msl/frpc'},
+                        {text: '使用MSL联机', link: '/msl/p2p'},
+                        {text: '软件本体配置', link: '/msl/software'},
+                        {text: '开发人员名单', link: '/msl/info'}
                     ]
                 }
             ]

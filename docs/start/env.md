@@ -9,11 +9,15 @@
 
 ::: code-group
 ```shell [debian]
+# 下面是编译安装的过程
 sudo apt update
-sudo apt install -y software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.11
+sudo apt install wget build-essential libncursesw5-dev libssl-dev \
+libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev  
+wget https://www.python.org/ftp/python/3.12.1/Python-3.12.1.tgz -o py312.tgz
+tar -zxvf py312.tgz
+cd Python-3.12.1
+./configure --enable-optimizations
+sudo make install
 ```
 
 ```shell [CentOS Stream]
