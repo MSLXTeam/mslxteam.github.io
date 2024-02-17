@@ -87,7 +87,12 @@ export default defineConfig({
                         {text: '使用协议', link: '/msl/eula'},
                         {text: '使用MSL开服', link: '/msl/start'},
                         {text: '进行服务器配置', link: '/msl/config'},
-                        {text: '内网穿透配置', link: '/msl/frpc'},
+                        {text: '内网穿透配置', collapsed: true,
+                            items: [
+                                {text: 'MSL自带', link: '/msl/frpc#MSL自带'},
+                                {text: 'OpenFrp', link: '/msl/frpc#使用OpenFrp'}
+                            ]
+                        },
                         {text: '使用MSL联机', link: '/msl/p2p'},
                         {text: '软件本体配置', link: '/msl/software'},
                         {text: '开发人员名单', link: '/msl/info'}

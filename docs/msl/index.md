@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Minecraft Server Launcher"
-  text: "新一代服务器管理/       联机工具"
+  text: "新一代服务器管理/\n联机工具"
   actions:
     - theme: brand
       text: 立即下载
