@@ -44,7 +44,9 @@ export default defineConfig({
             {text: '开发文档', link: '/develop/plugin'},
             {text: '开发人员名单', link: '/developers'},
             {text: '其他文档', items: [
-                    {text: "MSL", link:"/msl/index"}
+                    {text: "MSL", link: "/msl/index"},
+                    {text: "Acacia", link: "/acacia/index"},
+                    {text: "Acarua", link: "/acarua/index"}
                 ]}
         ],
 
