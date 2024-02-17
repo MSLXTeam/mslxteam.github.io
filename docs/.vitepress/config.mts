@@ -89,8 +89,8 @@ export default defineConfig({
                         {text: '进行服务器配置', link: '/msl/config'},
                         {text: '内网穿透配置', collapsed: true,
                             items: [
-                                {text: 'MSL自带', link: '/msl/frpc#MSL自带'},
-                                {text: 'OpenFrp', link: '/msl/frpc#使用OpenFrp'}
+                                {text: 'MSL自带', link: '/msl/frpc#msl自带'},
+                                {text: 'OpenFrp', link: '/msl/frpc#使用openfrp'}
                             ]
                         },
                         {text: '使用MSL联机', link: '/msl/p2p'},
