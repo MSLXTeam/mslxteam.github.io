@@ -100,6 +100,24 @@ export default defineConfig({
                         {text: '开发人员名单', link: '/msl/info'}
                     ]
                 }
+            ],
+            '/acarua/': [
+                {
+                    text: 'Acarua文档',
+                    items: [
+                        {text: '通用内容', collapsed: false,
+                            items: [
+                                {text: '开始使用', link: '/acarua/start'}
+                            ]
+                        },
+                        {text: 'AcaruaMC特有内容', collapsed: false,
+                            items: [
+                                {text: '数据类型介绍', link: '/acarua/mc/datatypes'},
+                                {text: '标准库介绍', link: '/acarua/mc/stdlib'}
+                            ]
+                        }
+                    ]
+                }
             ]
         },
     }
