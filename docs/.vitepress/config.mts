@@ -46,7 +46,8 @@ export default defineConfig({
             {text: '其他文档', items: [
                     {text: "MSL", link: "/msl/index"},
                     {text: "Acacia", link: "/acacia/index"},
-                    {text: "Acarua", link: "/acarua/index"}
+                    {text: "Acarua", link: "/acarua/index"},
+                    {text: "Kylin JVM", link: "/kylin/kylin"}
                 ]}
         ],
 
@@ -116,6 +117,17 @@ export default defineConfig({
                                 {text: '标准库介绍', link: '/acarua/mc/stdlib'}
                             ]
                         }
+                    ]
+                }
+            ],
+            '/kylin/': [
+                {
+                    text: 'Kylin JVM文档',
+                    items: [
+                        {text: '基础语法', link: '/kylin/start'},
+                        {text: '内置调用运行函数', link: '/kylin/builtin_funcs'},
+                        {text: '基础运行函数', link: '/kylin/base_funcs'},
+                        {text: '基础类库', link: '/kylin/stdlibs'}
                     ]
                 }
             ]

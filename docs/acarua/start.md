@@ -12,6 +12,10 @@ mut age: Int 25;
 let name: String "John";
 mut demo: Float, demo2: Double = 1.14, 5.14
 ```
+### 编译期常量
+
+条件: 只能为基本类型
+使用let const即可
 
 ## 条件判断
 使用 ```if (表达式) { 语句... } else { 语句... }``` 进行条件判断.
@@ -118,7 +122,7 @@ fun functionName(parameter1: DataType, parameter2: DataType): ReturnType {
 }
 
 fun printName(name: String) {
-    println("Name: $name")
+    printf("Name: $name")
 }
 ```
 
