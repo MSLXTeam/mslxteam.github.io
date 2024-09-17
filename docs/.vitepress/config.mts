@@ -85,7 +85,8 @@ export default defineConfig({
                     items: [
                         {text: '通用内容', collapsed: false,
                             items: [
-                                {text: '开始使用', link: '/acarua/start'}
+                                {text: '开始使用', link: '/acarua/start'},
+                                {text: '进阶内容', link: '/acarua/advanced'}
                             ]
                         },
                     ]
