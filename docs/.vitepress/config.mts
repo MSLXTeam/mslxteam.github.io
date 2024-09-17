@@ -2,8 +2,7 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "MSL-X Document",
-    description: "MSL-X Document,but uses Vitepress",
+    title: "Jamctl Doc",
     lang: "zh-Hans",
     cleanUrls: true,
     head: [
@@ -40,47 +39,25 @@ export default defineConfig({
 
         nav: [
             {text: '主页', link: '/'},
-            {text: '使用文档', link: '/start/env'},
-            {text: '开发文档', link: '/develop/plugin'},
-            {text: '开发人员名单', link: '/developers'},
+            {text: '使用文档', link: '/jamctl/env'},
             {text: '其他文档', items: [
+                    {text: "Tea Panel", link: "/teapanel/index"},
                     {text: "MSL", link: "/msl/index"},
                     {text: "Acacia", link: "/acacia/index"},
                     {text: "Acarua", link: "/acarua/index"},
-                    {text: "Kylin JVM", link: "/kylin/kylin"}
                 ]}
         ],
 
         sidebar: {
-            '/start/': [
+            '/jamctl/': [
                 {
                     text: '开始使用',
                     collapsed: false,
                     items: [
-                        {text: 'Q&A', link: '/start/qa'},
-                        {text: '环境配置', link: '/start/env'},
-                        {text: '更多功能', link: '/start/adv'},
-                        {text: 'nginx反代', link: '/start/nginx', collapsed: false,
-                            items: [
-                                {text: '使用包管理器安装', link: '/start/nginx#install_nginx_with_package_manager'},
-                                {text: '编译安装', link: '/start/nginx#install_nginx_manually'}
-                            ]
-                        },
-                        {text: '关于', link: '/start/about'}
+                        {text: '环境配置', link: '/jamctl/env'},
+                        {text: '关于', link: '/jamctl/info'}
                     ]
                 },
-            ],
-            '/develop/': [
-                {
-                    text: '开发文档',
-                    collapsed: false,
-                    items: [
-                        {text: '插件本体', link: '/develop/plugin'},
-                        {text: '事件系统', link: '/develop/event'},
-                        {text: '命令系统', link: '/develop/command'},
-                        {text: '杂项', link: '/develop/other'},
-                    ]
-                }
             ],
             '/msl/': [
                 {
@@ -111,26 +88,9 @@ export default defineConfig({
                                 {text: '开始使用', link: '/acarua/start'}
                             ]
                         },
-                        {text: 'AcaruaMC特有内容', collapsed: false,
-                            items: [
-                                {text: '数据类型介绍', link: '/acarua/mc/datatypes'},
-                                {text: '标准库介绍', link: '/acarua/mc/stdlib'}
-                            ]
-                        }
                     ]
                 }
             ],
-            '/kylin/': [
-                {
-                    text: 'Kylin JVM文档',
-                    items: [
-                        {text: '基础语法', link: '/kylin/start'},
-                        {text: '内置调用运行函数', link: '/kylin/builtin_funcs'},
-                        {text: '基础运行函数', link: '/kylin/base_funcs'},
-                        {text: '基础类库', link: '/kylin/stdlibs'}
-                    ]
-                }
-            ]
         },
     }
 })

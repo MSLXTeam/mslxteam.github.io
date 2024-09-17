@@ -1,31 +1,18 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
-  name: "Jamctl"
-  text: "基于C++的高性能\nMinecraft服务端管理工具"
+  name: "Tea Panel"
+  text: "基于Next.js的\n可拓展Jamctl前端"
   actions:
-    - theme: brand
-      text: 开始使用
-      link: /jamctl/env
+    - theme: alt
+      text: Jamctl
+      link: /
     - theme: alt
       text: Github
-      link: https://github.com/MSLXTeam/jamctl
-    - theme: alt
-      text: Tea Panel
-      link: /teapanel/index
+      link: https://github.com/MSLXTeam/teapanel
   image: 
       src: /logo.png
-      
-
-features:
-  - title: RESTful APIs
-    details: 舒服
-  - title: 自由的插件系统
-    details: 虽然还没开始做
-  - title: 高性能
-    details: 其实是依托强力的框架
 
 ---
 
